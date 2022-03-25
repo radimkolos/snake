@@ -5,7 +5,7 @@ int main()
 {
     std::shared_ptr<engine::GameData> gameData = std::make_shared<engine::GameData>();
 
-    gameData->window.create(sf::VideoMode(game::defs::DISPLAY_RESOLUTION.x, game::defs::DISPLAY_RESOLUTION.y), game::defs::WINDOW_NAME, sf::Style::Fullscreen);
+    gameData->window.create(sf::VideoMode(game::defs::DISPLAY_RESOLUTION.x, game::defs::DISPLAY_RESOLUTION.y), game::defs::WINDOW_NAME, sf::Style::Resize);
     gameData->statePool.addState(std::make_unique<game::states::SplashScreenState>(gameData));
 
     const sf::Clock _clock {};

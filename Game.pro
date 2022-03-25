@@ -33,7 +33,7 @@ SOURCES += \
 
 DISTFILES += \
 
-INCLUDEPATH += /usr/include/SFML/
+INCLUDEPATH += /usr/include/SFML
 LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window
 
 LIBS += -lfmt -lX11
